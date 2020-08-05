@@ -12,8 +12,11 @@ def won?(board)
  end
 end
 
-
-
+def full?(board)
+  board.all? do |token|
+    token == "X" || token == "O"
+  end
+end
 
 def draw?(board)
   WIN_COMBINATIONS.find do |win_combination|
