@@ -12,7 +12,7 @@ def won?(board)
  end
 end
 
-ç
+
 
 def draw?(board)
   WIN_COMBINATIONS.find do |win_combination|
